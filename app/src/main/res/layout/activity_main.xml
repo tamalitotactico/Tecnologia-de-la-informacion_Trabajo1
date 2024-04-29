@@ -34,9 +34,10 @@
         android:id="@+id/tuesday_checkbox"
         android:layout_width="150dp"
         android:layout_height="50dp"
-        android:layout_marginStart="124dp"
         android:layout_marginTop="188dp"
         android:text="Martes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -44,9 +45,10 @@
         android:id="@+id/monday_checkbox"
         android:layout_width="150dp"
         android:layout_height="50dp"
-        android:layout_marginStart="124dp"
         android:layout_marginTop="124dp"
         android:text="Lunes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -54,9 +56,10 @@
         android:id="@+id/friday_checkbox"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="124dp"
         android:layout_marginTop="380dp"
         android:text="Viernes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -64,9 +67,10 @@
         android:id="@+id/thursday_checkbox"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="124dp"
         android:layout_marginTop="316dp"
         android:text="Jueves"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -74,9 +78,10 @@
         android:id="@+id/wednesday_checkbox"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="124dp"
         android:layout_marginTop="252dp"
         android:text="Miercoles"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -84,9 +89,10 @@
         android:id="@+id/vote_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="160dp"
         android:layout_marginTop="460dp"
         android:text="Votar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -94,11 +100,34 @@
         android:id="@+id/show_results_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="116dp"
         android:layout_marginTop="520dp"
         android:text="Mostrar Resultados"
         app:iconTint="@color/design_default_color_secondary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/vote_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="88dp"
+        android:text="Votos registrados: 0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/restart_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Reiniciar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
